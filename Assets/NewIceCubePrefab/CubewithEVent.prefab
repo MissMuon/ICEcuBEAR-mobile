@@ -493,6 +493,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1961269656282206
+GameObject:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4187989329426166}
+  - component: {fileID: 114593638652958830}
+  - component: {fileID: 114701884414268874}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1964758684487496
 GameObject:
   m_ObjectHideFlags: 1
@@ -623,6 +640,19 @@ Transform:
   m_Father: {fileID: 4143723890735620}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4187989329426166
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1961269656282206}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4440610664997488}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4225947874308028
 Transform:
   m_ObjectHideFlags: 1
@@ -742,6 +772,7 @@ Transform:
   m_Children:
   - {fileID: 4887354837448676}
   - {fileID: 4258307892058056}
+  - {fileID: 4187989329426166}
   m_Father: {fileID: 4225947874308028}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2052,3 +2083,35 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curr_time: 0
   time_mod: 0.005
+--- !u!114 &114593638652958830
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1961269656282206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c4edb5d6eaeca64984cd207dc16122e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  centrs: {fileID: 4258307892058056}
+  randLength: 0.3
+  randTend: {x: 0, y: 0, z: 0}
+  randPref: 1
+  randDist: 10
+  speed: 0.2
+--- !u!114 &114701884414268874
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1961269656282206}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dbb349fd0ef850f4d88a20e113557456, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 114073811818944684, guid: b4c7cbcb1f6c9204b9a10915eb992ec5, type: 2}
+  secperSphere: 0.1
+  sphereDuration: 3
+  sphereRatio: 0.1
